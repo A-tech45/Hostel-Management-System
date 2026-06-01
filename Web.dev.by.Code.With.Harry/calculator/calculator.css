@@ -1,9 +1,0 @@
-*{box-sizing:border-box}
-.calculator{width:300px;background:#f4f4f8;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
-.display{width:100%;height:56px;font-size:24px;padding:8px;border-radius:8px;border:1px solid #ddd;margin-bottom:12px;text-align:right}
-.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.btn{padding:14px;font-size:18px;border:none;border-radius:8px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.05);cursor:pointer}
-.btn:active{transform:translateY(1px)}
-.btn.op{background:#fffbeb}
-.btn.eq{grid-column:4;background:#4f46e5;color:#fff}
-.btn.zero{grid-column:1 / span 2}
