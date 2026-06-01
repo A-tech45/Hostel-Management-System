@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(65, 65, 64);
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header ul {
+            position: sticky;
+            display: flex;
+            border: 2px solid black;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        header {
+            list-style: none;
+            padding: 30px;
+            font-size: 30px;
+            font-family: monospace;
+        }
+
+        .boxes {
+            display: flex;
+            border: 3px solid red;
+            background-color: rgb(108, 57, 156);
+            height: 610px;
+            padding: 10px;
+        }
+
+        .box1 {
+            position: relative;
+            left: 100px;
+            top: 20px;
+            height: 530px;
+            width: 530px;
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 20px;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 870px;
+            top: 139px;
+            height: 530px;
+            width: 530px;
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 20px;
+        }
+
+        .text {
+            position: relative;
+            top: 50px;
+            left: 130px;
+            height: 90px;
+            width: 1200px;
+            border: 2px solid black;
+            border-radius: 13px;
+            background-color: aquamarine;
+            padding: 10px;
+            align-content: center;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        footer {
+            position: relative;
+            top: 300px;
+            font-size: 30px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .image img {
+            position: fixed;
+            align-items: center;
+            padding: 20px;
+            border: 1px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </header>
+    <div class="boxes">
+        <Div class="box1"></Div>
+        <Div class="box2"></Div>
+    </div>
+    <div class="image">
+        <image src="wallpaper.png" height="40px" width="40px"></image>
+    </div>
+    <div class="text"> Hello I Am a Gamer..</div>
+    <footer>
+        <p> &copy; my website</p>
+
+    </footer>
+</body>
+
+</html>

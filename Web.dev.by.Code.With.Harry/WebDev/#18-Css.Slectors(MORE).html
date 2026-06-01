@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css slectors</title>
+    <style>
+        /* used to select the nth child of the parent*/
+        .box:nth-child(2){
+            background-color: red;
+        }
+        /* used to select the first line of the para */
+        .box::first-line{
+            background-color: aqua;
+        }
+        /* used to select the first letter of the para */
+        .box::first-letter{
+            background-color: red;
+        }
+        /* used to select all the boxes */
+        .boxes *{
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+            margin:2px;
+        }
+        /* used to select where data color is primary*/
+        p, a, .box, [data-color="primary"]{   /* this lines applies the property to all the mentetioned classes paras and others*/   
+            font-size: 28px;
+        }
+        /* selects the even or odd child of the box */
+        .box:nth-child(even){
+            color:rgb(179, 71, 71)
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Helooo</div>
+        <div class="box">Helooo</div>
+        <div class="box">Helooo</div>
+    </div>
+</body>
+</html>

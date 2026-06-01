@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css property</title>
+    <style>
+        /*class slector*/
+        .red {
+            background-color: red;
+        }
+
+        /*id slector*/
+        #green {
+            background-color: green;
+        }
+
+        .white {
+            background-color: aliceblue;
+        }
+
+        /*child slector [slects para inside div]*/
+        /* you can slect first and second para using first and last child */
+        /* From div p u can change the style of all the paras in the code */
+        div p {
+            color: aqua;
+            background-color: aqua;
+        }
+
+        * {
+            margin: 0;
+            padding: 20;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            background-color: black;
+
+        }
+
+        div p:first-child {
+            color: red;
+            background-color: wite;
+        }
+            /* by this u can change the style of the derire paras */
+        div p:last-child {
+            color: green;
+            background-color: hite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        hello
+    </div>
+    <div class="white">
+        hello
+    </div>
+    <div id="green">
+        hello
+        <article>
+            <p>yellow</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">google</a>
+
+    <div>
+        <!-- this is the eg of first and seconr child slector -->
+        <!-- I will change color of the paras differently -->
+        <p>Hey i am para..</p>
+        <p>Hey i am second para..</p>
+    </div>
+
+</body>
+
+</html>

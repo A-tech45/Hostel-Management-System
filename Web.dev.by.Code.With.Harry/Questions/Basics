@@ -1,0 +1,287 @@
+
+                       ----->>   Basic Syntax & Variables (15 problems)    <<-----
+
+1.	Print "Hello, World!"
+2.	Declare variables of different data types
+3.	Swap values of two variables
+4.	Calculate sum of two numbers
+5.	Calculate area of a rectangle
+6.	Convert Celsius to Fahrenheit
+7.	Calculate simple interest
+8.	Check if number is positive or negative
+9.	Find remainder of division
+10.	Convert minutes to hours
+11.	Calculate BMI (Body Mass Index)
+12.	Convert kilometers to miles
+13.	Calculate profit or loss percentage
+14.	Swap numbers without temporary variable
+15.	Calculate compound interest
+
+                      ----->>   Conditional Statements (15 problems)     <<-----
+
+1.	Check if number is even or odd  //Done
+2.	Find largest of three numbers    //Done
+3.	Check leap year         //Done
+4.	Check if character is vowel or consonant  //Done
+5.	Check if student passed or failed     //Done
+6.	Calculate grade based on marks    //Done
+7.	Check if triangle is valid           //Done
+8.	Check if number is positive, negative or zero   //Done
+9.	Check if character is alphabet, digit or special character    
+10.	Calculate electricity bill with slabs                   //Done
+11.	Check if year is century year and leap year      //Done
+12.	Find number of days in a month    
+13.	Check if point lies on x-axis, y-axis or origin
+14.	Check if triangle is equilateral, isosceles or scalene  //Done
+15.	Calculate roots of quadratic equation      //Done
+
+                      ----->>   Loops (20 problems)    <<------
+
+1.	Print numbers from 1 to n       //Done
+2.	Print even numbers from 1 to n     //Done
+3.	Print multiplication table                  //Done
+4.	Calculate sum of first n natural numbers     //Done
+5.	Calculate factorial of a number            //Done
+6.	Print Fibonacci series up to n terms       //Done
+7.	Check if number is prime                      //Done
+8.	Find sum of digits of a number          //Done
+9.	Reverse a number                            //Done
+10.	Check if number is palindrome       //Done
+11.	Find Armstrong number            //Done
+12.	Find GCD of two numbers
+13.	Find LCM of two numbers
+14.	Print all prime numbers between 1 to n
+15.	Print patterns (right triangle, pyramid)
+16.	Count digits in a number         //Done
+17.	Find power of a number  
+18.	Print all factors of a number
+19.	Calculate sum of series 1 + 2 + 3 + ... + n
+20.	Find factorial using while loop  //Done
+21. find sum of even no         //Done
+
+                      ---->>   Arrays/Lists (15 problems)   <<-----
+
+1.	Find largest element in array   //Done
+2.	Find smallest element in array    //Done
+3.	Calculate sum of array elements     //Done
+4.	Find average of array elements        //Done
+5.	Search element in array        //Done
+6.	Reverse an array               //Done
+7.	Copy array elements to another array  //Done
+8.	Count even and odd numbers in array  //Done
+9.	Count positive and negative numbers in array  //Done
+10.	Find second largest element in array        //Done
+11.	Remove duplicates from array            
+12.	Merge two arrays
+13.	Find frequency of elements in array
+14.	Sort array in ascending order
+15.	Find common elements between two arrays
+16. Find reverse of an array  //Done
+ 
+                        --->>>   Strings (15 problems)       <<------
+
+1.	Find length of string          //Done
+2.	Count vowels and consonants in string  //Done
+3.	Check if string is palindrome  //Done
+4.	Reverse a string     //Done
+5.	Count words in string  //Done
+6.	Convert string to uppercase/lowercase
+7.	Remove spaces from string
+8.	Check if string contains substring
+9.	Count occurrences of character in string
+10.	Replace character in string
+11.	Remove vowels from string
+12.	Find first non-repeating character
+13.	Check if two strings are anagrams
+14.	Find most frequent character in string
+15.	Capitalize first letter of each word
+        
+                          ----->>   Functions (10 problems)     <<-----
+
+1.	Function to check prime number
+2.	Function to calculate factorial
+3.	Function to find square of number    //Done
+4.	Function to check palindrome number   //Done
+5.	Function to calculate average of three numbers   //Done
+6.	Function to find maximum of three numbers   //Done
+7.	Function to print multiplication table   //Done
+8.	Recursive function for factorial
+9.	Function to check Armstrong number    //Done
+10.	Function to calculate power of number
+
+
+
+
+
+
+
+              ---->>    ADVANCE QUESTIONS       <<----
+
+
+Done   1.	Given n, print YES if n is a perfect square, else NO.   
+Done   2.	Given n, print YES if n is a perfect number (sum of proper divisors equals n), else NO.  
+Done   3.	Given n, print YES if n is abundant, deficient, or perfect (exactly one word).  
+Done   4.	Given a and b (a ≤ b), print the count of even numbers in [a, b]. 
+Done   5.	Given a and b, print the count of multiples of k in [a, b] (user gives k).   
+Done   6.	Given a and b, print the sum of all numbers in [a, b] that are not multiples of 3
+Done   7.	Given a and b, print the sum of squares of all numbers in [a, b].
+Done   8.	Given a and b, print the largest number in [a, b] that is a multiple of m (or print -1 if none).
+       9.	Given a and b, print the count of numbers in [a, b] with an even number of digits.
+       10.	Given a and b, print the count of palindromic numbers in [a, b].
+       11.	Given a and b, print the number with the maximum sum of digits in [a, b] (if tie, print the smallest such number).
+       12.	Given a and b, print the LCM of all numbers from a to b when b − a ≤ 5 (assume valid).
+       
+       13.	(A) Given n, print YES/NO if n is prime (basic trial division).
+       (B) Given a and b, print all primes in [a, b] using the same basic method (keep ranges small).
+       
+       14.	Write a Python program to print a right-angled triangle of stars with n rows.
+       15.	Write a Python program to print an inverted right-angled triangle of stars with n rows.
+       16.	Write a Python program to print a right-angled triangle of numbers where each row contains numbers from 1 up to the row number (for n rows).
+       17.	Write a Python program to print an inverted right-angled triangle of numbers with n rows.
+       18.	Write a Python program to print a centered pyramid of stars with n rows.
+       19.	Write a Python program to print an inverted centered pyramid of stars with n rows.
+       20.	Write a Python program to print a diamond (filled) pattern of stars built from n rows (diamond height based on n).
+       21.	Write a Python program to print a hollow diamond pattern of stars with n rows.
+       22.	Write a Python program to print a pyramid of numbers where every value in a row equals the row number (for n rows).
+       23.	Write a Python program to print a hollow pyramid of stars with n rows.
+       24.	Write a Python program to print Floyd’s triangle with n rows.
+       25.	Write a Python program to print Pascal’s triangle with n rows.
+       26.	Write a Python program to print a rectangle of stars with n rows and m columns.
+       27.	Write a Python program to print a square of numbers where each row contains the row number repeated n times.
+       28.	Write a Python program to print a square with stars only on the main diagonal (size n).
+       29.	Write a Python program to print an alphabet pyramid with n rows (A, B, C …).
+       30.	Write a Python program to print a reverse alphabet pyramid with n rows.
+       31.	Write a Python program to print a right-angled triangle made of the same character repeated, with the last row having n characters.
+       32.	Write a Python program to print an inverted pyramid of numbers with n rows.
+       33.	Write a Python program to print an hourglass pattern of stars with n rows.
+       34.	Write a Python program to print a numeric diamond pattern with n rows.
+       35.	Write a Python program to print a hollow square pattern of stars with n rows.
+       36.	Write a Python program to print a butterfly pattern of stars with n rows.
+       37.	Write a Python program to print a zigzag star pattern with n rows.
+       38.	Write a Python program to print a hollow right-angled triangle of stars with n rows.
+       39.	Write a Python program to print a star pattern that increases row-by-row up to the middle row and then decreases (for total n rows).
+       40.	Write a Python program to print a pattern of letters in increasing length for n rows (each row longer than the previous).
+       41.	Write a Python program to print a center-aligned triangle of numbers with n rows.
+       42.	Write a Python program to print a square pattern with alternating 1 and 0 in each cell (size n).
+       43.	Write a Python program to print a cross (X) pattern of stars inside an n × n square.
+       44.	Write a Python program to print a right-angled triangle aligned to the right with n rows.
+       45.	Write a Python program to print a right-angled triangle aligned to the left with n rows.
+       46.	Write a Python program to print stars only on the main diagonal of a square of size n.
+       47.	Write a Python program to print a number pyramid composed of odd numbers with n rows.
+       48.	Write a Python program to print a hollow diamond pattern made with numbers with n rows.
+       49.	Write a Python program to print a palindromic number pyramid with n rows (numbers read same forwards/backwards on each row).
+       50.	Write a Python program to print a number pattern that increases row-by-row to the middle row and then decreases (total n rows).
+       51.	Write a Python program to print a double pyramid (two pyramids joined at the base) of stars with n rows.
+       52.	Write a Python program to print an inverted right-angled triangle of alphabets with n rows.
+       53.	Write a Python program to print a rectangle with stars on the border and spaces inside, with n rows and m columns.
+       54.	Write a Python program to print alternating lines of stars and spaces for n rows (e.g., line1 stars, line2 spaces, line3 stars, …).
+       55.	Write a Python program to print a triangle of even numbers with n rows.
+       56.	Write a Python program to print a triangle of odd numbers with n rows.
+       57.	Write a Python program to print a diamond pattern of letters with n rows.
+       58.	Write a Python program to print a right-angled triangle of a repeated character with n rows.
+       59.	Write a Python program to print a left-aligned inverted triangle of stars with n rows.
+       60.	Write a Python program to print a mirrored pyramid of numbers with n rows (pyramid reflected horizontally).
+       61.	Write a Python program to print a right-angled triangle where each cell contains the sum of its row and column indices (size n).
+       62.	Write a Python program to print an hourglass pattern of numbers with n rows.
+       63.	Write a Python program to print a hollow square that has stars on the border and also on the main diagonal (size n).
+       64.	Given n, print the first n prime numbers.
+       65.	Given n, print the sum of the first n prime numbers.
+       66.	Given n, print the product of the first n prime numbers (assume n ≤ 10).
+       67.	Given n, print the nth prime number.
+       68.	Given n, print all twin prime pairs less than or equal to n.
+       69.	Given n, print all prime numbers in [n, 2n].
+       70.	Given n, check if it is a Mersenne prime (prime of form 2^k – 1).
+       71.	Given n, check if it is a Fermat number (of form 2^(2^k) + 1).
+       72.	Given n, print the prime factorization of n.
+       73.	Given n, print the highest prime factor of n.
+       74.	Given n, print the lowest prime factor of n.
+       75.	Given n, print the count of distinct prime factors of n.
+       76.	Given n, print the sum of all prime factors of n (without repetition).
+       77.	Given n, print the sum of all prime factors of n (with repetition).
+       78.	Given n, print YES if n is squarefree, else NO.
+       79.	Given n, print YES if n is a semiprime (product of two primes).
+       80.	Given n, print YES if n is a powerful number (every prime factor squared divides it).
+       81.	Given n, print Euler’s totient function φ(n).
+       82.	Given n, print the Carmichael function value λ(n) (for small n only).
+       83.	Given n, print the Möbius function μ(n) (for small n only).
+       84.	Given n, print the factorial n!.
+       85.	Given n, print the sum 1 + 2 + 3 + … + n using formula.
+       86.	Given n, print the sum 1² + 2² + 3² + … + n².
+       87.	Given n, print the sum 1³ + 2³ + 3³ + … + n³.
+       88.	Given n, print the sum of reciprocals 1 + 1/2 + 1/3 + … + 1/n (approximate as float).
+       89.	Given a, d, n, print the nth term of an arithmetic progression.
+       90.	Given a, d, n, print the sum of the first n terms of an arithmetic progression.
+       91.	Given a, r, n, print the nth term of a geometric progression.
+       92.	Given a, r, n, print the sum of the first n terms of a geometric progression.
+       93.	Given n, print the Fibonacci sequence up to n terms.
+       94.	Given n, print the nth Fibonacci number.
+       95.	Given n, print the sum of the first n Fibonacci numbers.
+       96.	Given n, print the ratio F(n)/F(n-1) for large n and observe convergence (approximate).
+       97.	Given n, print all Lucas numbers up to n terms.
+       98.	Given n, print the nth Lucas number.
+       99.	Given n, print the Tribonacci sequence up to n terms.
+       100.	Given n, print the Padovan sequence up to n terms.
+       101.	Given n, print the Catalan numbers up to n terms.
+       102.	Given n, print the nth Catalan number.
+       103.	Given n, print the Bell numbers up to n terms (use recurrence for small n).
+       104.	Given n, compute n choose r (nCr).
+       105.	Given n, compute n permute r (nPr).
+       106.	Given n, print Pascal’s triangle up to n rows.
+       107.	Given n, print the sum of entries in the nth row of Pascal’s triangle.
+       108.	Given n, print the central binomial coefficient C(2n, n).
+       109.	Given n, check if n is in Pascal’s triangle (appears in some row).
+       110.	Given n, compute the multinomial coefficient for given k parts.
+       111.	Given n, compute the Stirling numbers of the second kind S(n, k) for small values.
+       112.	Given n, compute the number of derangements of n items.
+       113.	Given n, compute the nth partition number p(n) for small n (brute force allowed).
+       114.	Given n, print the sum of factorials 1! + 2! + … + n!.
+       115.	Given n, print the sum of the digits of n!.
+       116.	Given n, print the largest power of 2 less than or equal to n.
+       117.	Given n, print the largest power of any integer k (k > 1) less than or equal to n.
+       118.	Given n, print the highest power of 2 that divides n.
+       119.	Given n, print the highest power of any prime p that divides n.
+       120.	Given n, check if it is a power of 2.
+       121.	Given n, check if it is a power of 3.
+       122.	Given n, check if it is a power of any integer k.
+       123.	Given n, print the binary representation of n.
+       124.	Given n, print the number of 1s in its binary representation.
+       125.	Given n, print the number of 0s in its binary representation.
+       126.	Given n, print the count of set bits in n (Brian Kernighan’s method).
+       127.	Given n, print YES if n is a palindrome in binary.
+       128.	Given n, print YES if n is a palindrome in hexadecimal.
+       129.	Given n, print its Gray code representation.
+       130.	Given n, convert Gray code back to binary.
+       131.	Given n, print the Hamming weight (number of differing bits) compared with m.
+       132.	Given n, print the Hamming distance between two binary strings.
+       133.	Given n, print the next higher number with the same number of set bits.
+       134.	Given n, print all permutations of [1, 2, …, n].
+       135.	Given n, print all combinations of r elements from [1, 2, …, n].
+       136.	Given n, generate all subsets of [1, 2, …, n].
+       137.	Given a list of n integers, print the sum of all elements.
+       138.	Given a list of n integers, print the average of the elements.
+       139.	Given a list of n integers, print the maximum element.
+       140.	Given a list of n integers, print the minimum element.
+       141.	Given a list of n integers, print the difference between max and min.
+       142.	Given a list of n integers, print the second largest element.
+       143.	Given a list of n integers, print the second smallest element.
+       144.	Given a list of n integers, print the list in reverse order.
+       145.	Given a list of n integers, print the list sorted in increasing order.
+       146.	Given a list of n integers, print the list sorted in decreasing order.
+       147.	Given a list of n integers, print the median value.
+       148.	Given a list of n integers, print the mode value.
+       149.	Given a list of n integers, print the variance (population variance).
+       150.	Given a list of n integers, print the standard deviation.
+       151.	Given a list of n integers, print all distinct elements.
+       152.	Given a list of n integers, print all elements that occur more than once.
+       153.	Given a list of n integers, print the frequency of each element.
+       154.	Given a list of n integers, check if it is sorted (non-decreasing).
+       155.	Given a list of n integers, check if it is strictly increasing.
+       156.	Given a list of n integers, check if it is strictly decreasing.
+       157.	Given a list of n integers, rotate the list left by k positions.
+       158.	Given a list of n integers, rotate the list right by k positions.
+       159.	Given a list of n integers, shift all zeros to the end while maintaining order.
+       160.	Given a list of n integers, shift all negatives to the front while maintaining order.
+       161.	Given a list of n integers, separate even and odd numbers into two lists.
+       162.	Given a list of n integers, print the longest increasing subsequence (brute force for small n).
+       163.	Given a list of n integers, print the longest decreasing subsequence.
+       164.	Read a string and print its length

@@ -1,0 +1,47 @@
+<style>
+#klo {
+    display: none;
+    background: lightblue;
+    padding: 20px;
+}
+
+
+</style>
+
+<div id="loader"></div>
+
+<div id="klo">
+    <img src="your-image.jpg" width="200">
+</div>
+
+<button id="btn">Load Content</button>
+
+<audio id="sound" src="sound.mp3"></audio>
+
+<script>
+document.getElementById("btn").onclick = function () {
+    let loader = document.getElementById("loader");
+    let box = document.getElementById("klo");
+    let audio = document.getElementById("sound");
+
+    // Show loader
+    loader.style.display = "block";
+
+    // Simulate loading delay
+    setTimeout(function () {
+        loader.style.display = "none";
+        box.style.display = "block";
+        audio.play();
+    }, 1500); // 1.5 seconds
+}
+</script>
+
+   document.getElementById('btn').onclick = function toggleSidebar() {
+        loader.style.display = "block";
+       
+        setTimeout(function () {
+        document.getElementById('cntr').style.display = "none";
+        document.getElementById('kol').style.display = "flex";
+        document.getElementById('sound').play();
+        }, 1500);
+    }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            border-radius: 20px;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: row;
+            /*It changes the direction of the content into horizantal */
+            flex-direction: row-reverse;
+            /* It reverses the direction of the row */
+            flex-direction: column;
+            /*It changes the direction of the content in vertical */
+
+            /* Coloumn lai ulta bonai dinxa ( It reverses the direction of coloumn items)*/
+            flex-direction: column-reverse;
+        }
+
+        .iteam {
+            text-align: center;
+            align-content: center;
+            height: 90px;
+            width: 90px;
+            border: 2px solid black;
+            margin: 5px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="iteam">1</div>
+        <div class="iteam">2</div>
+        <div class="iteam">3</div>
+        <div class="iteam">4</div>
+        <div class="iteam">5</div>
+    </div>
+
+</body>
+
+</html>

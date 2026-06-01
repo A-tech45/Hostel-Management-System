@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AKA-Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #15171f;
+      --text: #f5f5f5;
+      --muted: #a0a4b8;
+      --accent: #ff6b3d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #15171f, #05060a);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+    .logo { font-weight: 700; letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase; color: var(--muted); }
+    nav a {
+      color: var(--muted);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--accent); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.3fr);
+      gap: 3rem;
+      margin-bottom: 4rem;
+      align-items: center;
+    }
+    .hero-title { font-size: clamp(2.4rem, 4vw, 3.2rem); margin-bottom: 1rem; }
+    .hero-title span { color: var(--accent); }
+    .hero-subtitle { color: var(--muted); max-width: 32rem; margin-bottom: 2rem; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .pill-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent); margin-right: 0.4rem;
+    }
+    .btn-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary, .btn-ghost {
+      padding: 0.8rem 1.4rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #ff6b3d, #ffb347);
+      color: #0b0c10;
+      font-weight: 600;
+    }
+    .btn-primary:hover { filter: brightness(1.05); }
+    .btn-ghost {
+      border-color: rgba(255,255,255,0.18);
+      color: var(--muted);
+      background: rgba(255,255,255,0.01);
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.35); }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #25283b, #111320);
+      border-radius: 1.6rem;
+      padding: 1.8rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 26px 60px rgba(0,0,0,0.7);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .hero-card p { font-size: 0.85rem; color: var(--muted); }
+    .hero-tag {
+      position: absolute;
+      top: 1.4rem;
+      right: 1.4rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(5, 255, 172, 0.12);
+      color: #a5ffd8;
+      font-size: 0.75rem;
+      border: 1px solid rgba(165,255,216,0.35);
+    }
+
+    section { margin-bottom: 4rem; }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .section-title { font-size: 1.6rem; margin-bottom: 1.5rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.6rem;
+    }
+    .card {
+      background: linear-gradient(145deg, #151822, #0f111a);
+      border-radius: 1.2rem;
+      padding: 1.2rem;
+      border: 1px solid rgba(255,255,255,0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+      border-color: rgba(255,255,255,0.12);
+    }
+    .card-thumb {
+      border-radius: 0.9rem;
+      background: radial-gradient(circle at top left, #ff6b3d33, #151822);
+      height: 160px;
+      margin-bottom: 1rem;
+    }
+    .card-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.15rem; }
+    .card-title { font-size: 1rem; margin-bottom: 0.25rem; }
+    .card-meta { font-size: 0.8rem; color: var(--muted); }
+
+    .about {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.2fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .avatar {
+      width: 140px; height: 140px;
+      border-radius: 1.4rem;
+      background: radial-gradient(circle at top left, #ff6b3d, #151822);
+      margin-bottom: 1rem;
+    }
+    .about p { color: var(--muted); }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .chip {
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #ff6b3d, #ffb347);
+      border-radius: 1.6rem;
+      padding: 2rem;
+      color: #1b1c22;
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    .contact h2 { margin-bottom: 0.8rem; }
+    .contact p { margin-bottom: 1.2rem; }
+    .contact form { display: grid; gap: 0.8rem; }
+    .field {
+      display: flex; flex-direction: column;
+      font-size: 0.8rem;
+    }
+    .field label { margin-bottom: 0.2rem; }
+    .field input, .field textarea {
+      border-radius: 0.8rem;
+      border: none;
+      padding: 0.6rem 0.8rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+    }
+    .field textarea { min-height: 90px; resize: vertical; }
+    .contact button {
+      border-radius: 999px;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: #111320;
+      color: #f5f5f5;
+      justify-self: flex-start;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 800px) {
+      header { margin-bottom: 2rem; }
+      .hero, .about, .contact {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero { gap: 2rem; }
+      body { padding: 1.5rem 1.25rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">AKA-Work</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          Available for freelance
+        </div>
+        <h1 class="hero-title">Hi, I’m <span>Aka-Work</span>, a creative designer crafting digital experiences.</h1>
+        <p class="hero-subtitle">
+          I help brands and products stand out with thoughtful visuals, smart interactions, and delightful details.
+        </p>
+        <div class="btn-row">
+          <a href="#work" class="btn-primary">View selected work →</a>
+          <a href="#contact" class="btn-ghost">Let’s collaborate</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <span class="hero-tag">Portfolio 2026</span>
+        <h2>Recent highlights</h2>
+        <p>3+ years designing products, brands, and websites for startups and agencies across fintech, lifestyle, and SaaS.</p>
+      </aside>
+    </section>
+
+    <section id="work">
+      <div class="section-label">Selected work</div>
+      <h2 class="section-title">Projects I’m proud of</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb"></div>
+          <div class="card-label">Product design · 2025</div>
+          <h3 class="card-title">Aurora Finance – Mobile app</h3>
+          <div class="card-meta">End‑to‑end UX, UI, and design system for a new-age finance app.</div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb"></div>
+          <div class="card-label">Branding · 2025</div>
+          <h3 class="card-title">Northline Studio – Visual identity</h3>
+          <div class="card-meta">Logo, brand guidelines, and website for a creative collective.</div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb"></div>
+          <div class="card-label">Web design · 2024</div>
+          <h3 class="card-title">Café Solace – Web experience</h3>
+          <div class="card-meta">Immersive landing page with subtle motion and storytelling.</div>
+        </article>
+
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <div class="section-label">About</div>
+        <h2 class="section-title">Designer, problem solver, collaborator.</h2>
+        <p>
+          I combine visual storytelling with product thinking to help teams ship experiences that feel as good as they look.
+          From early discovery to final handoff, I enjoy working across the entire design process.
+        </p>
+      </div>
+      <aside>
+        <div class="avatar"></div>
+        <p>Currently based in [Your City], collaborating remotely with teams worldwide.</p>
+        <div class="skills-list">
+          <span class="chip">Product & UI design</span>
+          <span class="chip">Visual identity</span>
+          <span class="chip">Design systems</span>
+          <span class="chip">Prototyping</span>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-title">How I can help</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title">Product & UX</h3>
+          <p class="card-meta">From wireframes to polished flows, I design interfaces that are intuitive, accessible, and scalable.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Brand & visual</h3>
+          <p class="card-meta">Logos, visual systems, and launch assets that give your product a distinct voice.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Web experiences</h3>
+          <p class="card-meta">Marketing sites and landing pages crafted for clear storytelling and better conversion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p>Tell me a bit about your goals, timeline, and what you’re looking to create. I aim to respond within 1–2 business days.</p>
+      </div>
+      <form>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    <footer>
+      <span>© 2026 Your Name</span>
+      <span>Dribbble · Behance · GitHub · LinkedIn</span>
+    </footer>
+  </div>
+</body>
+</html>

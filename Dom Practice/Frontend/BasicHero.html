@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            padding: 10px;
+            list-style: none;
+        }
+        h1{
+            font-size: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header{
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            padding: 20px;
+             }
+        nav{
+                display: flex;
+                justify-content: space-between;
+             }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            background-color: #dadbf1;
+            padding: 20px;
+            height:25vh;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr ;
+            place-items: center ;
+            height:70vh;
+
+        }
+        article{
+            padding: 30px;
+        }
+        footer{
+            display: flex;
+            gap: 40px;
+            height:20vh;
+            position: relative;
+            background-color: black;
+            color: white;
+
+        }
+        .right{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+        .Sup{
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #4C5FD5;
+            font-weight: bold;
+        }
+        .lgn{
+            padding: 10px;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            border-radius: 3px;
+        }
+        .left{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            
+        }
+        input{
+            padding: 8px;
+            width: 700px;
+        }
+        .hd{
+            padding: 10px;;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 38px;
+        }
+        li{
+            padding: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .ftr{
+            position: relative;
+            right: -20;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="left">
+            <span>Abstract | Help Center</span>
+           </div>
+           <div class="right">
+               <span class="lgn">Login</span>
+               <span class="Sup">Sign Up</span>
+            </div>
+         </nav>
+    </header>
+    <section>
+            <h1 class="hd">How Can We Help You ?</h1>
+            <input type="text" placeholder="Search">
+    </section>
+    <main>
+            <article>
+                 <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+            </article>
+
+            <article>
+                <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+            </article>
+
+            <article>
+                 <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+            </article>
+
+            <article>
+                 <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+            </article>
+
+            <article>
+                 <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+            </article>
+
+            <article>
+                 <h1>Branches</h1>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                    <p>Abstract abranches alet You manage the different versions od tje life</p>
+                
+            </article>
+    </main>
+    <footer>
+        <div class="ftr">
+            <ul>
+                <li><h1>Abstract</h1></li>
+                <li>Branches</li>
+            </ul>
+        </div>
+        <div class="ftr">
+            <ul>
+                <li><h1>Resources</h1></li>
+                <li>Blog</li>
+                <li>Help Center</li>
+                <li>Release Notes</li>
+            </ul>
+        </div>
+        <div class="ftr">
+            <ul>
+                <li><h1>Contact</h1></li>
+                <li>About Us</li>
+                <li>Reach Us</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

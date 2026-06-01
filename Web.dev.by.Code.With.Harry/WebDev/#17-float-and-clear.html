@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear </title>
+    <style>
+        /* Lets image on right side of the text */
+        img{
+            float: right;
+        }
+        .cards{
+            border: 2px solid rgb(51, 237, 79);
+             display: flow-root;      /*flow-root avoids overflow of the image from the container*/
+        }
+        .card{
+            border: 2px solid rgb(228, 64, 64);
+        }
+        .card:nth-child(2){
+            background-color: aqua;
+            clear:right;  /* clear:rigt is used to remove image from the right side
+                             and clear:both is used to remove image from both sides */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <image src="wallpaper.png" width="430px"></image>
+        
+        <div class="card">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Eius omnis hic ipsum veniam eveniet voluptates blanditiis dolore.
+                Totam placeat dicta eum, labore tempora consectetur illo in! Error qui amet illo!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla, sint deleniti velit fugit
+                quo neque eaque doloribus, 
+                dolor, tempore perferendis. Corporis illum voluptatum non reprehenderit. Similique sed quas laudantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae optio distinctio vel magni. Eveniet a quasi consequuntur.
+                Fugit autem, eos temporibus exercitationem quisquam quia natus quae. Dolores, cumque quidem.
+            </p>
+            <div class="card">card 2</div>
+        </div>
+    </div>
+</body>
+</html>

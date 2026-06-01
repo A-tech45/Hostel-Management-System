@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marks Management Dashboard</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: white;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.card span {
+  font-size: 14px;
+  color: gray;
+}
+.table-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-box h3 {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="sidebar">
+    <h2>Marks Management</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Students</li>
+      <li>Subjects</li>
+      <li>Marks</li>
+      <li>Reports</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+
+    <div class="top">
+      <h1>Dashboard</h1>
+      
+    </div>
+
+    <div class="cards">
+      <div class="card">120<br><span>Students</span></div>
+      <div class="card">8<br><span>Subjects</span></div>
+      <div class="card">320<br><span>Marks Entries</span></div>
+      <div class="card">15<br><span>Reports</span></div>
+    </div>
+
+    <div class="table-box">
+      <h3>Recent Marks Entries</h3>
+
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+
+        <tr>
+          <td>Ritesh Chokma</td>
+          <td>Maths</td>
+          <td>99.9999</td>
+        </tr>
+
+        <tr>
+          <td>Sushil Motu</td>
+          <td>Python</td>
+          <td>0.99</td>
+        </tr>
+
+        <tr>
+          <td>Akash</td>
+          <td>Maths</td>
+          <td>2</td>
+        </tr>
+
+        <tr>
+          <td>Pankaj Phedophile</td>
+          <td>DCCN</td>
+          <td>69</td>
+        </tr>
+
+        <tr>
+          <td>Arka Bhadwal</td>
+          <td>English</td>
+          <td>Fail</td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

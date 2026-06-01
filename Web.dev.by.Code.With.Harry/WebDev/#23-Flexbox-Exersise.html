@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Exersise</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 20px;
+        }
+
+        ul li {
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        .nav {
+            margin-left: auto;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="box">
+                <img src="person.png" height="60px"></img>
+                <p>Ultra Edit</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                    <li><img src="eraser.png " height="40px"></img></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

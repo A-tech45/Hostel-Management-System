@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            background-color: #00c1b5;
+            height: 100vh;
+        }
+        .centre{
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            width: 50vh;
+            height: 70vh;
+        }
+        .top{
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .right{
+            border: 2px solid black;
+            padding: 20px 70px;
+        }
+        .down{
+            border: 2px solid black;
+            padding: 30px 70px;
+        }
+        .left{
+            border: 2px solid black;
+            padding:  30px ;
+        }
+        .lft{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid rgb(0, 0, 0);
+            height:100vh;
+
+        }
+        .rit{
+             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <div class="centre"></div>
+            <div class="lft">
+                <div class="top"></div>
+                <div class="right"></div>
+            </div>
+            <div class="rit">
+                <div class="down"></div>
+                <div class="left"></div>
+            </div>
+        </div>
+        </main>
+</body>
+</html>
