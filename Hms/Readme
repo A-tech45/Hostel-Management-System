@@ -1,0 +1,7 @@
+This is a html , css and php project based on hostel management system that u can use on college projects and in others also .
+Basically to run this u need wamp(windows) and lamp(linux) .
+put this folder inside the www folder in wamp and in linux put in opt/lampp/htdocs .
+The sql database is given here so no need to create exrta .
+Just opean php my admin and run the sql command there .
+Now start wamp or lampp and open the index.php .
+So , You Are Ready To GO .
